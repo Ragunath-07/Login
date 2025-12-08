@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+}
+
+body {
+  background-color: white;
+  color: #9BA4B5;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1120px;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.login__social-link {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px hsla(0, 0%, 0%, .4);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  transition: transform .4s;
+  align-items: center;
+}
+
+.login__social-link:hover {
+  transform: translateY(-4px);
+}
+
+/* BreakPoints */
+
+/* Small device */
+@media screen and (max-width:320px) {
+  .container{
+    margin-inline: 16px;
+  }
+}
+
+/* Medium device */
+@media screen and (min-width:540px){
+  .login__area{
+    width: 400px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width:350px) and (max-height:600px){
+  .login{
+    height: 760px;
+  }
+}
+
+@media screen and (min-width:1150px){
+  .container{
+    margin-inline: auto;
+  }
+  .login__area{
+    width: 460px;
+    margin: initial;
+  }
+  .login__access{
+    width: 600px;
+  }
+
+  .login__title{
+    text-align: initial;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .login__error{
+    text-align: center;
+    margin-right: 25%;
+  }
+
+  .login__blob{
+    display: block;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .login__img{
+    height: 100%;
+  }
+}
