@@ -32,7 +32,7 @@ function LoginAccount() {
 
     const handleCheck = (evt) => {
         evt.preventDefault()
-        var loginDetails = axios.post("http://localhost:3000/details", { "email": email, "password": password })
+        var loginDetails = axios.post("https://login-backend-551n.onrender.com/details", { "email": email, "password": password })
         loginDetails.then(function (data) {
             if (data.data === true) {
                 navigate('/dashboard')
